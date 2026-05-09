@@ -1,4 +1,4 @@
-# OUTR Feedback System v3
+# OUTR Feedback System 
 
 Student Feedback Portal for Odisha University of Technology and Research (OUTR), Bhubaneswar.
 
@@ -7,7 +7,7 @@ Student Feedback Portal for Odisha University of Technology and Research (OUTR),
 ## 🚀 Quick Start (localhost / VS Code)
 
 ### Step 1 — Prerequisites
-- [Node.js](https://nodejs.org/) v18 or later
+- [Node.js](https://nodejs.org/) v18 
 - [MySQL](https://dev.mysql.com/downloads/mysql/) 8.0 or later (optional but recommended)
 
 ### Step 2 — Setup MySQL Database
@@ -32,7 +32,7 @@ DB_NAME=feedback_db
 JWT_SECRET=outr_feedback_secret_2025
 PORT=3000
 ```
-> **No MySQL password?** Leave `DB_PASS=` blank. The app also works without MySQL using built-in credentials.
+
 
 ### Step 4 — Install & Run
 ```bash
@@ -52,7 +52,7 @@ http://localhost:3000
 
 | Role            | Username / RegNo | Password     |
 |-----------------|------------------|--------------|
-| Student         | Any RegNo        | ≥ 75% attendance |
+| Student         | Any RegNo        | Any RegNo    |
 | Faculty / HOD / Advisor | `faculty` | `faculty123` |
 | Admin           | `admin`          | `admin123`   |
 | HOD             | `hod`            | `hod123`     |
@@ -89,11 +89,4 @@ outr-feedback-v3/
 
 ---
 
-## ⚠️ Troubleshooting
 
-| Problem | Fix |
-|---------|-----|
-| `Cannot connect to MySQL` | Check MySQL is running; verify DB_PASS in .env |
-| `Port 3000 already in use` | Change `PORT=3001` in .env |
-| `Module not found` | Run `npm install` in the backend folder |
-| `schema.sql error` | Drop database first: `DROP DATABASE IF EXISTS feedback_db;` |
